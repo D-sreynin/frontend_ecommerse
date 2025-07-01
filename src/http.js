@@ -1,13 +1,14 @@
-import axios from 'axios';
+import axios from "axios";
 
 // Create axios instance with better defaults
 const http = axios.create({
-  baseURL: process.env.NODE_ENV === 'production' 
-    ? 'https://your-production-api.com/api' 
-    : 'http://127.0.0.1:8000/api',
+  baseURL:
+    process.env.NODE_ENV === "production"
+      ? "https://backendecommerse-production.up.railway.app"
+      : "http://127.0.0.1:8000/api",
   headers: {
-    'Content-Type': 'application/json',
-    'Accept': 'application/json',
+    "Content-Type": "application/json",
+    Accept: "application/json",
   },
   withCredentials: true, // For sessions/cookies if using Sanctum
 });
@@ -15,7 +16,7 @@ const http = axios.create({
 // Add request interceptor for auth tokens if needed
 http.interceptors.request.use(
   (config) => {
-    const token = localStorage.getItem('token');
+    const token = localStorage.getItem("token");
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
     }
@@ -43,7 +44,7 @@ http.interceptors.response.use(
           // Show server error message
           break;
         default:
-          // Handle other errors
+        // Handle other errors
       }
     }
     return Promise.reject(error);
