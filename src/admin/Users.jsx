@@ -206,7 +206,7 @@ const Users = () => {
             <li className="nav-item topbar-user dropdown hidden-caret">
               <a className="dropdown-toggle profile-pic" data-bs-toggle="dropdown" href="#" aria-expanded="false">
                 <div className="avatar-sm">
-                  <img src="img/tina.jpg" alt="..." className="avatar-img rounded-circle" />
+                  <img src="img/profile.jpg" alt="..." className="avatar-img rounded-circle" />
                 </div>
                 <span className="profile-username">
                   <span className="op-7">Hi, </span>
@@ -248,7 +248,7 @@ const Users = () => {
         <div className="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
           <div>
             <h3 className="fw-bold mb-3">User Management</h3>
-            <h6 className="op-7 mb-2">By Rothana</h6>
+            <h6 className="op-7 mb-2">By Doeun Sreynin</h6>
           </div>
           <div className="ms-md-auto py-2 py-md-0">
             <a href="#" className="btn btn-label-info btn-round me-2">Manage</a>

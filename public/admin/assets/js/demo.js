@@ -192,7 +192,7 @@ Circles.create({
 //Notify
 $.notify({
 	icon: 'icon-bell',
-	title: 'Rothana',
+	title: 'Doeun Sreynin',
 	message: 'Premium Bootstrap 5 Admin Dashboard',
 },{
 	type: 'secondary',

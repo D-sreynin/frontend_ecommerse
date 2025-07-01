@@ -234,7 +234,7 @@ const CreateType = () => {
         <div className="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
           <div>
             <h3 className="fw-bold mb-3">Style Management</h3>
-            <h6 className="op-7 mb-2">By Rothana</h6>
+            <h6 className="op-7 mb-2">By Doeun Sreynin</h6>
           </div>
           <div className="ms-md-auto py-2 py-md-0">
             <a href="#" className="btn btn-label-info btn-round me-2">Manage</a>
@@ -264,4 +264,4 @@ const CreateType = () => {
   )
 }
 
-export default CreateType
+export default CreateType;
