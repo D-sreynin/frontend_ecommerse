@@ -4,59 +4,62 @@ import "./style.css";
 import http from "../http";
 function Login() {
   const navigate = useNavigate();
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [message, setMessage] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [message, setMessage] = useState("");
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-        const response = await http.post('/login', {
-            email: email,
-            password: password
-        });
-        console.log(response.data);
-        setMessage(response.data.message);
+      const response = await http.post("/login", {
+        email: email,
+        password: password,
+      });
+      console.log(response.data);
+      setMessage(response.data.message);
 
-        localStorage.setItem('token', response.data.token);
-        localStorage.setItem('name', response.data.name);
-        localStorage.setItem('email', response.data.email);
+      localStorage.setItem("token", response.data.token);
+      localStorage.setItem("name", response.data.name);
+      localStorage.setItem("email", response.data.email);
 
-        alert("Login Successful");
-        navigate("/administator");
+      alert("Login Successful");
+      navigate("/administator");
     } catch (error) {
-        console.error(error);
-        setMessage('Login Failed');
+      console.error(error);
+      setMessage("Login Failed");
     }
-};
-
+  };
 
   return (
     <div className="form-container">
       <p className="title">Login Page</p>
       <form className="form1" onSubmit={handleLogin}>
         <div className="input-group">
-          <label for="username">Email</label>
-          <input 
-                    type="email" 
-                    placeholder="Email" 
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                />
+          <label htmlFor="username">Email</label>
+          <input
+            id="username"
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
         </div>
         <div className="input-group">
-          <label for="password">Password</label>
-          <input 
-                    type="password" 
-                    placeholder="Password" 
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    required
-                />
+          <label htmlFor="password">Password</label>
+          <input
+            id="password"
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
         </div>
-        <button className="sign" style={{marginTop:"20px"}} type="submit">Login</button>
+        <button className="sign" style={{ marginTop: "20px" }} type="submit">
+          Login
+        </button>
       </form>
-      <p style={{color:"red"}}>{message}</p>
+      <p style={{ color: "red" }}>{message}</p>
       <div className="social-message">
         <div className="line"></div>
         <p className="message">Login with social accounts</p>
