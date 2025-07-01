@@ -218,7 +218,7 @@ const Users = () => {
                   <li>
                     <div className="user-box">
                       <div className="avatar-lg">
-                        <img src="img/tina.jpg" alt="image profile" className="avatar-img rounded" />
+                        <img src="img/profile.jpg" alt="image profile" className="avatar-img rounded" />
                       </div>
                       <div className="u-text">
                         <h4>{userName}</h4>
