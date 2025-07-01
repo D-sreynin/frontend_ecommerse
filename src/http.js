@@ -4,7 +4,7 @@ import axios from "axios";
 const http = axios.create({
   baseURL:
     process.env.NODE_ENV === "production"
-      ? "https://backendecommerse-production.up.railway.app"
+      ? "https://backendecommerse-production-75ff.up.railway.app"
       : "http://127.0.0.1:8000/api",
   headers: {
     "Content-Type": "application/json",
