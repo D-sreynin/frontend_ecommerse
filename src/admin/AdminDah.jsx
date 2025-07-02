@@ -211,7 +211,7 @@ const AdminDah = () => {
                           <a href="#">
                             <div className="notif-img">
                               <img
-                                src="assets/img/tina.jpg"
+                                src="assets/img/profile.jpg"
                                 alt="Img Profile"
                               />
                             </div>
@@ -224,7 +224,7 @@ const AdminDah = () => {
                           <a href="#">
                             <div className="notif-img">
                               <img
-                                src="assets/img/tina.jpg"
+                                src="assets/img/profile.jpg"
                                 alt="Img Profile"
                               />
                             </div>
@@ -237,7 +237,7 @@ const AdminDah = () => {
                           <a href="#">
                             <div className="notif-img">
                               <img
-                                src="assets/img/tina.jpg"
+                                src="assets/img/profile.jpg"
                                 alt="Img Profile"
                               />
                             </div>
@@ -252,7 +252,7 @@ const AdminDah = () => {
                           <a href="#">
                             <div className="notif-img">
                               <img
-                                src="assets/img/tina.jpg"
+                                src="assets/img/profile.jpg"
                                 alt="Img Profile"
                               />
                             </div>

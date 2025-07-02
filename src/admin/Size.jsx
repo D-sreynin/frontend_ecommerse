@@ -325,7 +325,7 @@ const Size = () => {
                         <div className="user-box">
                           <div className="avatar-lg">
                             <img
-                              src="img/tina.jpg"
+                              src="img/profile.jpg"
                               alt="image profile"
                               className="avatar-img rounded"
                             />
