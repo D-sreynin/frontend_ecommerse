@@ -192,7 +192,7 @@ const CreateType = () => {
             <li className="nav-item topbar-user dropdown hidden-caret">
               <a className="dropdown-toggle profile-pic" data-bs-toggle="dropdown" href="#" aria-expanded="false">
                 <div className="avatar-sm">
-                  <img src="img/tina.jpg" alt="..." className="avatar-img rounded-circle" />
+                  <img src="img/profile.jpg" alt="..." className="avatar-img rounded-circle" />
                 </div>
                 <span className="profile-username">
                   <span className="op-7">Hi, </span>
@@ -204,7 +204,7 @@ const CreateType = () => {
                   <li>
                     <div className="user-box">
                       <div className="avatar-lg">
-                        <img src="img/tina.jpg" alt="image profile" className="avatar-img rounded" />
+                        <img src="img/profile.jpg" alt="image profile" className="avatar-img rounded" />
                       </div>
                       <div className="u-text">
                         <h4>{userName}</h4>
