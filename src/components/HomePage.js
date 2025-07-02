@@ -21,7 +21,7 @@ const HomePage = () => {
         console.log(res.data.data, 'data');
       })
       .catch(err => {
-        setError('Failed to fetch products');
+        // setError('Failed to fetch products');
         setLoading(false);
         setProducts([]);
       });
