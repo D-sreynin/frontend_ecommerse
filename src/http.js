@@ -3,7 +3,7 @@ import axios from 'axios';
 // Create axios instance with better defaults
 const http = axios.create({
   baseURL: process.env.NODE_ENV === 'production' 
-    ? 'https://backecommerce-production.up.railway.app' 
+    ? 'https://backendecommerse-production-75ff.up.railway.app/api' 
     : 'http://127.0.0.1:8000/api',
   headers: {
     'Content-Type': 'application/json',
