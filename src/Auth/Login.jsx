@@ -10,10 +10,13 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await http.post("/login", {
-        email: email,
-        password: password,
-      });
+      const response = await http.post(
+        "https://backendecommerse-production-75ff.up.railway.app/login",
+        {
+          email: email,
+          password: password,
+        }
+      );
       console.log(response.data);
       setMessage(response.data.message);
 
